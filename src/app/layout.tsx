@@ -47,7 +47,22 @@ export default function RootLayout({
           {/* Footer */}
           <div className="footer">
             <span>© 2025 Manga Generations</span>
-            <span>$MANGEN — Fuel the Manga Generation</span>
+            <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
+              <span>$MANGEN — Fuel the Manga Generation</span>
+              <a 
+                href="https://x.com/MangenAIstudio" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                  color: 'var(--accent)',
+                  textDecoration: 'none',
+                  fontWeight: '700',
+                  fontSize: '11px'
+                }}
+              >
+                @MangenAIstudio
+              </a>
+            </div>
           </div>
         </main>
       </body>

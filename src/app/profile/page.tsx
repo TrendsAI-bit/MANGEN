@@ -58,7 +58,7 @@ export default function ProfilePage() {
 
         <div className="panel">
           <div className="caption">RECENT ACTIVITY</div>
-          <div style={{fontSize: '14px', lineHeight: '1.6'}}>
+          <div style={{fontSize: '14px', lineHeight: '1.6', marginTop: '20px'}}>
             <div style={{marginBottom: '8px', color: 'var(--accent)', fontWeight: '600'}}>
               Submitted &ldquo;The Last Samurai&rdquo;
             </div>

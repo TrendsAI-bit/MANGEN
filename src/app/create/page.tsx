@@ -44,9 +44,7 @@ export default function CreatePage() {
     "A dramatic manga panel featuring a samurai warrior in battle stance, dynamic lighting, detailed armor",
     "A cyberpunk manga scene with neon lights, futuristic cityscape, and a mysterious character",
     "A slice-of-life manga panel showing high school students in a classroom, warm lighting",
-    "A fantasy manga illustration with magical creatures, mystical forest setting, vibrant colors",
-    "A sports manga panel with intense action, speed lines, and determined athletes",
-    "A romance manga scene with cherry blossoms, soft lighting, and emotional characters"
+    "A fantasy manga illustration with magical creatures, mystical forest setting, vibrant colors"
   ];
 
   return (
@@ -132,6 +130,7 @@ export default function CreatePage() {
                 alt="Generated Manga Art"
                 fill
                 style={{objectFit: 'cover'}}
+                unoptimized
               />
             )}
             {!loading && !generatedImage && (
@@ -157,7 +156,7 @@ export default function CreatePage() {
           <div key={index} className="cell">
             <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
               <Image
-                src={`/mangenlogo${(index % 4) + 1}.png`}
+                src={`/mangenlogo${index === 0 ? '' : index + 1}.png`}
                 alt={`Preset ${index + 1}`}
                 fill
                 style={{objectFit: 'cover'}}

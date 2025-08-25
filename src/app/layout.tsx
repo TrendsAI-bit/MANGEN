@@ -23,10 +23,11 @@ export default function RootLayout({
               <Image 
                 src="/mangenlogo.png" 
                 alt="MANGEN Logo" 
-                width={100} 
-                height={75} 
+                width={120} 
+                height={90} 
                 className="logo"
                 priority
+                unoptimized
               />
             </div>
             マンゲン

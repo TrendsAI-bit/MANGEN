@@ -93,7 +93,7 @@ export default function WinnersPage() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo.png" 
+              src="/mangenlogo4.png" 
               alt="Dragon Quest" 
               fill
               style={{objectFit: 'cover'}}

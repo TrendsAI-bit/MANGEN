@@ -52,7 +52,7 @@ export default function Home() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo.png" 
+              src="/mangenlogo4.png" 
               alt="Vote" 
               fill
               style={{objectFit: 'cover'}}
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo2.png" 
+              src="/mangenlogo.png" 
               alt="Fund" 
               fill
               style={{objectFit: 'cover'}}
@@ -76,7 +76,7 @@ export default function Home() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo3.png" 
+              src="/mangenlogo2.png" 
               alt="Publish" 
               fill
               style={{objectFit: 'cover'}}
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo.png" 
+              src="/mangenlogo3.png" 
               alt="Stories Created" 
               fill
               style={{objectFit: 'cover'}}
@@ -142,7 +142,7 @@ export default function Home() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo2.png" 
+              src="/mangenlogo4.png" 
               alt="Community Votes" 
               fill
               style={{objectFit: 'cover'}}
@@ -154,7 +154,7 @@ export default function Home() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo3.png" 
+              src="/mangenlogo.png" 
               alt="Creators Funded" 
               fill
               style={{objectFit: 'cover'}}
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
             <Image 
-              src="/mangenlogo.png" 
+              src="/mangenlogo2.png" 
               alt="SOL Distributed" 
               fill
               style={{objectFit: 'cover'}}

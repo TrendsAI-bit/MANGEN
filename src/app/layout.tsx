@@ -46,7 +46,7 @@ export default function RootLayout({
 
           {/* Footer */}
           <div className="footer">
-            <span>© 2024 Manga Generations</span>
+            <span>© 2025 Manga Generations</span>
             <span>$MANGEN — Fuel the Manga Generation</span>
           </div>
         </main>

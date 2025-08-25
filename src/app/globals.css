@@ -242,13 +242,38 @@ html, body {
 
 @media (max-width: 600px) {
   .page {
-    margin: 12px;
+    margin: 8px;
     padding: 12px;
+    border-width: 4px;
+    outline-width: 1px;
+    outline-offset: -8px;
   }
   .tab {
     flex: 1 1 100%;
   }
   .logo {
     height: 60px;
+  }
+  .strip {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .cell {
+    padding: 8px;
+  }
+  .cell h4 {
+    font-size: 14px;
+  }
+  .cell p {
+    font-size: 12px;
+  }
+  .h2 {
+    font-size: clamp(20px, 4vw, 32px);
+    margin: 24px 0 8px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
   }
 }

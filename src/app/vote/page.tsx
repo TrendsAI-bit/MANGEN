@@ -9,7 +9,7 @@ export default function VotePage() {
         <div className="caption">COMMUNITY VOTING</div>
         <p className="copy">
           Help decide which manga stories get funded and published. Your vote matters! 
-          The community uses $MANGEN tokens to vote on submissions and determine the next winners.
+          Staked users get priority voting and early access to new features.
         </p>
       </div>
 
@@ -124,26 +124,26 @@ export default function VotePage() {
         </div>
       </div>
 
-      <h2 className="h2"><span>VOTING RULES</span><small>GUIDELINES</small></h2>
+      <h2 className="h2"><span>STAKING BENEFITS</span><small>PRIORITY ACCESS</small></h2>
       <div className="cols">
         <div className="panel">
-          <div className="caption">HOW TO VOTE</div>
+          <div className="caption">STAKED USERS</div>
           <ul style={{margin: 0, paddingLeft: '1.2rem', fontSize: '14px'}}>
-            <li>Stake $MANGEN tokens to earn voting power</li>
-            <li>Each token gives you 1 vote per submission</li>
-            <li>You can vote multiple times on the same story</li>
-            <li>Voting period lasts 7 days per season</li>
-            <li>Top 3 stories receive funding</li>
+            <li>Priority voting on all submissions</li>
+            <li>Early access to new features and updates</li>
+            <li>Exclusive preview of next season content</li>
+            <li>Special staking rewards and bonuses</li>
+            <li>Direct input on platform development</li>
           </ul>
         </div>
         <div className="panel">
-          <div className="caption">VOTING POWER</div>
+          <div className="caption">VOTING SYSTEM</div>
           <ul style={{margin: 0, paddingLeft: '1.2rem', fontSize: '14px'}}>
-            <li>1 $MANGEN = 1 vote</li>
-            <li>10 $MANGEN = 10 votes</li>
-            <li>100 $MANGEN = 100 votes</li>
-            <li>Stake more, vote more</li>
-            <li>Unstake anytime after voting</li>
+            <li>Simple one-click voting for all users</li>
+            <li>Staked users get 2x voting power</li>
+            <li>Voting period: 7 days per season</li>
+            <li>Top 3 stories receive funding</li>
+            <li>Real-time vote tracking and updates</li>
           </ul>
         </div>
       </div>

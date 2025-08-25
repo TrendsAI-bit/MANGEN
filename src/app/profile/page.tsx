@@ -1,12 +1,10 @@
 "use client";
 
-import Image from "next/image";
-
 export default function ProfilePage() {
   return (
     <>
       <h2 className="h2"><span>PROFILE</span><small>CREATOR</small></h2>
-
+      
       <div className="hero">
         <div className="panel">
           <div className="caption">CREATOR INFO</div>
@@ -35,7 +33,7 @@ export default function ProfilePage() {
             </h3>
             <p style={{margin: 0, fontSize: '14px', color: '#666'}}>Passionate manga artist</p>
           </div>
-
+          
           <div style={{display: 'grid', gap: '8px'}}>
             <div style={{display: 'flex', justifyContent: 'space-between'}}>
               <span style={{fontSize: '14px', color: '#666'}}>Stories Created:</span>
@@ -55,25 +53,25 @@ export default function ProfilePage() {
             </div>
           </div>
         </div>
-
+        
         <div className="panel">
           <div className="caption">RECENT ACTIVITY</div>
-          <div style={{fontSize: '14px', paddingLeft: '4px'}}>
-            <div style={{display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '8px'}}>
-              <span style={{color: 'var(--accent)', fontWeight: '800', flexShrink: 0}}>⚡</span>
-              <span style={{wordWrap: 'break-word', overflowWrap: 'break-word'}}>Submitted &ldquo;The Last Samurai&rdquo;</span>
+          <div style={{fontSize: '14px'}}>
+            <div style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
+              <span style={{color: 'var(--accent)', fontWeight: '800'}}>⚡</span>
+              <span>Submitted &ldquo;The Last Samurai&rdquo;</span>
             </div>
-            <div style={{display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '8px'}}>
-              <span style={{color: 'var(--accent)', fontWeight: '800', flexShrink: 0}}>❤️</span>
-              <span style={{wordWrap: 'break-word', overflowWrap: 'break-word'}}>Received 156 votes</span>
+            <div style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
+              <span style={{color: 'var(--accent)', fontWeight: '800'}}>❤️</span>
+              <span>Received 156 votes</span>
             </div>
-            <div style={{display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '8px'}}>
-              <span style={{color: 'var(--gold)', fontWeight: '800', flexShrink: 0}}>🏆</span>
-              <span style={{wordWrap: 'break-word', overflowWrap: 'break-word'}}>Won 10 SOL grant</span>
+            <div style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
+              <span style={{color: 'var(--gold)', fontWeight: '800'}}>🏆</span>
+              <span>Won 10 SOL grant</span>
             </div>
-            <div style={{display: 'flex', alignItems: 'flex-start', gap: '8px'}}>
-              <span style={{color: 'var(--accent)', fontWeight: '800', flexShrink: 0}}>📖</span>
-              <span style={{wordWrap: 'break-word', overflowWrap: 'break-word'}}>Published &ldquo;Cyberpunk Dreams&rdquo;</span>
+            <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+              <span style={{color: 'var(--accent)', fontWeight: '800'}}>📖</span>
+              <span>Published &ldquo;Cyberpunk Dreams&rdquo;</span>
             </div>
           </div>
         </div>
@@ -82,50 +80,22 @@ export default function ProfilePage() {
       <h2 className="h2"><span>MY SUBMISSIONS</span><small>PORTFOLIO</small></h2>
       <div className="strip">
         <div className="cell">
-          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
-            <Image
-              src="/mangenlogo.png"
-              alt="The Last Samurai"
-              fill
-              style={{objectFit: 'cover'}}
-            />
-          </div>
+          <div className="thumb" aria-hidden="true"></div>
           <h4>The Last Samurai</h4>
           <p>Published</p>
         </div>
         <div className="cell">
-          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
-            <Image
-              src="/mangenlogo2.png"
-              alt="Cyberpunk Dreams"
-              fill
-              style={{objectFit: 'cover'}}
-            />
-          </div>
+          <div className="thumb" aria-hidden="true"></div>
           <h4>Cyberpunk Dreams</h4>
           <p>Published</p>
         </div>
         <div className="cell">
-          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
-            <Image
-              src="/mangenlogo3.png"
-              alt="School Days"
-              fill
-              style={{objectFit: 'cover'}}
-            />
-          </div>
+          <div className="thumb" aria-hidden="true"></div>
           <h4>School Days</h4>
           <p>In Progress</p>
         </div>
         <div className="cell">
-          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
-            <Image
-              src="/mangenlogo4.png"
-              alt="Dragon Quest"
-              fill
-              style={{objectFit: 'cover'}}
-            />
-          </div>
+          <div className="thumb" aria-hidden="true"></div>
           <h4>Dragon Quest</h4>
           <p>Planning</p>
         </div>
@@ -136,7 +106,7 @@ export default function ProfilePage() {
         <div className="panel">
           <div className="caption">THE LAST SAMURAI</div>
           <p style={{fontSize: '14px', margin: '8px 0'}}>
-            A tale of honor and redemption in feudal Japan. This story captured the community&apos;s imagination
+            A tale of honor and redemption in feudal Japan. This story captured the community&apos;s imagination 
             and earned the backing to become a full manga series.
           </p>
           <div style={{
@@ -157,11 +127,11 @@ export default function ProfilePage() {
             <span style={{fontSize: '12px', color: '#666'}}>Published 2024</span>
           </div>
         </div>
-
+        
         <div className="panel">
           <div className="caption">CYBERPUNK DREAMS</div>
           <p style={{fontSize: '14px', margin: '8px 0'}}>
-            A neon-lit adventure through a dystopian future. This cyberpunk story explores themes of
+            A neon-lit adventure through a dystopian future. This cyberpunk story explores themes of 
             technology, humanity, and the price of progress.
           </p>
           <div style={{

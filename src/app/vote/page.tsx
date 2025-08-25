@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function VotePage() {
   return (
     <>
@@ -14,7 +16,14 @@ export default function VotePage() {
       <h2 className="h2"><span>CURRENT SUBMISSIONS</span><small>SEASON 1</small></h2>
       <div className="strip">
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo.png" 
+              alt="The Last Samurai" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>The Last Samurai</h4>
           <p>A tale of honor and redemption in feudal Japan.</p>
           <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
@@ -34,7 +43,14 @@ export default function VotePage() {
         </div>
         
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo2.png" 
+              alt="Cyberpunk Dreams" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>Cyberpunk Dreams</h4>
           <p>A neon-lit adventure through a dystopian future.</p>
           <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
@@ -54,7 +70,14 @@ export default function VotePage() {
         </div>
         
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo3.png" 
+              alt="School Days" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>School Days</h4>
           <p>Heartwarming stories from high school life.</p>
           <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
@@ -74,7 +97,14 @@ export default function VotePage() {
         </div>
         
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo.png" 
+              alt="Dragon Quest" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>Dragon Quest</h4>
           <p>Epic fantasy adventure with magical creatures.</p>
           <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>

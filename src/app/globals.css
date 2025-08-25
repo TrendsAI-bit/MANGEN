@@ -43,6 +43,23 @@ html, body {
   padding: 12px 16px;
   border: 6px solid var(--frame);
   text-align: center;
+  position: relative;
+}
+
+/* Logo styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.logo {
+  height: 75px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
 }
 
 /* Tabs */
@@ -204,21 +221,6 @@ html, body {
   justify-content: space-between;
 }
 
-/* Logo styling */
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 8px;
-}
-
-.logo {
-  height: 60px;
-  width: auto;
-  filter: brightness(0) contrast(1.2);
-}
-
 /* Responsive */
 @media (max-width: 900px) {
   .hero {
@@ -245,5 +247,8 @@ html, body {
   }
   .tab {
     flex: 1 1 100%;
+  }
+  .logo {
+    height: 50px;
   }
 }

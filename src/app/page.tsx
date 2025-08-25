@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -10,7 +12,14 @@ export default function Home() {
             Manga Generations is a memecoin and creative movement that turns manga fans into manga creators. With $MANGEN,
             anyone can generate manga artwork, publish their stories, and compete to bring their manga dreams to life.
           </p>
-          <div className="img-placeholder" title="Retro manga placeholder"></div>
+          <div style={{height: '300px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo2.png" 
+              alt="Manga Art" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
         </div>
         <div className="panel">
           <div className="caption">EDITORIAL</div>
@@ -29,22 +38,50 @@ export default function Home() {
       <h2 className="h2"><span>HOW IT WORKS</span><small>SEASONAL FLOW</small></h2>
       <div className="strip">
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo3.png" 
+              alt="Generate" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>Generate</h4>
           <p>Users create AI-assisted manga panels or submit original art and stories.</p>
         </div>
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo.png" 
+              alt="Vote" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>Vote</h4>
           <p>The community votes using $MANGEN for staking and voting power.</p>
         </div>
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo2.png" 
+              alt="Fund" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>Fund</h4>
           <p>Top creators receive 10 SOL grants to pursue real manga projects.</p>
         </div>
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo3.png" 
+              alt="Publish" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>Publish</h4>
           <p>Winners become Manga Generations Originals—minted and shared globally.</p>
         </div>
@@ -91,22 +128,50 @@ export default function Home() {
       <h2 className="h2"><span>COMMUNITY STATS</span><small>NUMBERS</small></h2>
       <div className="strip">
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo.png" 
+              alt="Stories Created" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>1,234</h4>
           <p>Stories Created</p>
         </div>
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo2.png" 
+              alt="Community Votes" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>56,789</h4>
           <p>Community Votes</p>
         </div>
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo3.png" 
+              alt="Creators Funded" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>42</h4>
           <p>Creators Funded</p>
         </div>
         <div className="cell">
-          <div className="thumb" aria-hidden="true"></div>
+          <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
+            <Image 
+              src="/mangenlogo.png" 
+              alt="SOL Distributed" 
+              fill
+              style={{objectFit: 'cover'}}
+            />
+          </div>
           <h4>420</h4>
           <p>SOL Distributed</p>
         </div>

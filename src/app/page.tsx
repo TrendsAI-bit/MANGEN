@@ -125,7 +125,7 @@ export default function Home() {
       </div>
 
       {/* Community Stats */}
-      <h2 className="h2"><span>COMMUNITY STATS</span><small>LIVE NUMBERS</small></h2>
+      <h2 className="h2"><span>COMMUNITY STATS</span><small>TO BE UPDATED</small></h2>
       <div className="strip">
         <div className="cell">
           <div style={{height: '120px', border: '3px solid var(--ink)', position: 'relative', overflow: 'hidden'}}>
@@ -136,7 +136,7 @@ export default function Home() {
               style={{objectFit: 'cover'}}
             />
           </div>
-          <h4>2,847</h4>
+          <h4>To be updated</h4>
           <p>Stories Created</p>
         </div>
         <div className="cell">
@@ -148,7 +148,7 @@ export default function Home() {
               style={{objectFit: 'cover'}}
             />
           </div>
-          <h4>89,432</h4>
+          <h4>To be updated</h4>
           <p>Community Votes</p>
         </div>
         <div className="cell">
@@ -160,7 +160,7 @@ export default function Home() {
               style={{objectFit: 'cover'}}
             />
           </div>
-          <h4>67</h4>
+          <h4>To be updated</h4>
           <p>Creators Funded</p>
         </div>
         <div className="cell">
@@ -172,7 +172,7 @@ export default function Home() {
               style={{objectFit: 'cover'}}
             />
           </div>
-          <h4>670</h4>
+          <h4>To be updated</h4>
           <p>SOL Distributed</p>
         </div>
       </div>

@@ -1,26 +1,249 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@700;900&family=Inter:wght@400;600;800&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #d7d2c6;   /* warm newsprint */
+  --ink: #191813;     /* near-black */
+  --frame: #b9b29f;   /* light frame line */
+  --accent: #b7313d;  /* retro red */
+  --tab: #c5beac;     /* tab fill */
+  --gold: #d3ad4a;    /* highlight */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html, body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--ink);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.35;
+}
+
+/* Page frame */
+.page {
+  max-width: 1080px;
+  margin: 24px auto;
+  background: var(--paper);
+  border: 8px solid var(--ink);
+  outline: 2px solid var(--frame);
+  outline-offset: -12px;
+  padding: 18px;
+}
+
+/* Massive JP masthead */
+.masthead {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  font-size: clamp(36px, 9vw, 120px);
+  letter-spacing: 0.04em;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 16px;
+  border: 6px solid var(--frame);
+  text-align: center;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin: 14px 0 18px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px 8px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  background: var(--tab);
+  border: 3px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.tab:hover {
+  background: #d3ccbb;
+}
+
+/* Grid hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 18px;
+}
+
+.panel {
+  background: #eee8dc;
+  border: 6px solid var(--ink);
+  padding: 12px;
+  position: relative;
+}
+
+.panel .caption {
+  position: absolute;
+  top: -14px;
+  left: 12px;
+  background: var(--paper);
+  padding: 2px 8px;
+  border: 3px solid var(--ink);
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+
+/* Placeholder image */
+.img-placeholder {
+  height: 380px;
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.08) 0 10px, transparent 10px 20px),
+    linear-gradient( -45deg, rgba(0,0,0,.08) 0 8px, transparent 8px 16px),
+    radial-gradient(circle at 20px 20px, rgba(0,0,0,.12) 1px, transparent 1px);
+  background-size: 28px 28px, 22px 22px, 8px 8px;
+  filter: grayscale(1) contrast(1.2);
+  border: 3px solid var(--ink);
+}
+
+/* Typographic display */
+.display {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: .02em;
+  line-height: .95;
+}
+
+.big {
+  font-size: clamp(40px, 6vw, 90px);
+}
+
+.kicker {
+  font-size: clamp(18px, 2.3vw, 28px);
+  letter-spacing: .1em;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.copy {
+  font-size: 15px;
+  max-width: 52ch;
+}
+
+/* Section headings */
+.h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(26px, 3.4vw, 44px);
+  letter-spacing: .06em;
+  border-bottom: 6px solid var(--ink);
+  padding-bottom: 6px;
+  margin: 32px 0 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.h2 small {
+  font: 800 12px/1 Inter, system-ui;
+  letter-spacing: .12em;
+  color: #4b473f;
+}
+
+/* How it works comic strip */
+.strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.cell {
+  background: #eee8dc;
+  border: 6px solid var(--ink);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cell .thumb {
+  height: 120px;
+  background:
+    repeating-linear-gradient(-15deg, rgba(0,0,0,.1) 0 2px, transparent 2px 8px),
+    radial-gradient(#000 1px, transparent 1px);
+  background-size: auto, 10px 10px;
+  border: 3px solid var(--ink);
+}
+
+.cell h4 {
+  margin: 0;
+  font: 900 16px/1.05 Inter, sans-serif;
+  letter-spacing: .06em;
+}
+
+.cell p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Two-column lists */
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 26px;
+  border-top: 6px solid var(--ink);
+  padding-top: 10px;
+  font: 700 11px/1.2 Inter, sans-serif;
+  color: #3c3933;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) contrast(1.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .strip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cols {
+    grid-template-columns: 1fr;
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tab {
+    flex: 1 1 calc(50% - 6px);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 600px) {
+  .page {
+    margin: 12px;
+    padding: 12px;
+  }
+  .tab {
+    flex: 1 1 100%;
+  }
 }

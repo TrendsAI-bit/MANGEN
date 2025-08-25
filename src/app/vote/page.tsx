@@ -1,57 +1,122 @@
 export default function VotePage() {
   return (
-    <div className="max-w-6xl mx-auto p-8">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Vote on <span className="text-red-600">Stories</span></h1>
-        <p className="text-xl text-gray-600">Help decide which manga stories get funded</p>
+    <>
+      <h2 className="h2"><span>VOTE</span><small>COMMUNITY BOARD</small></h2>
+      
+      <div className="panel">
+        <div className="caption">COMMUNITY VOTING</div>
+        <p className="copy">
+          Help decide which manga stories get funded and published. Your vote matters! 
+          The community uses $MANGEN tokens to vote on submissions and determine the next winners.
+        </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
-        <div className="bg-white p-6 rounded-lg shadow-lg">
-          <div className="bg-gray-200 h-48 rounded-lg mb-4 flex items-center justify-center">
-            <span className="text-gray-500">Manga Cover</span>
-          </div>
-          <h3 className="text-lg font-bold mb-2">The Last Samurai</h3>
-          <p className="text-gray-600 mb-2">by MangaMaster</p>
-          <p className="text-sm text-gray-500 mb-4">A tale of honor and redemption</p>
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-500">1,234 votes</span>
-            <button className="bg-red-600 text-white px-4 py-2 rounded font-bold hover:bg-red-700">
-              Vote
+      <h2 className="h2"><span>CURRENT SUBMISSIONS</span><small>SEASON 1</small></h2>
+      <div className="strip">
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>The Last Samurai</h4>
+          <p>A tale of honor and redemption in feudal Japan.</p>
+          <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+            <span style={{fontSize: '12px', color: '#666'}}>1,234 votes</span>
+            <button style={{
+              background: 'var(--accent)',
+              color: 'white',
+              border: '2px solid var(--ink)',
+              padding: '4px 8px',
+              fontSize: '12px',
+              fontWeight: '800',
+              cursor: 'pointer'
+            }}>
+              VOTE
             </button>
           </div>
         </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-lg">
-          <div className="bg-gray-200 h-48 rounded-lg mb-4 flex items-center justify-center">
-            <span className="text-gray-500">Manga Cover</span>
-          </div>
-          <h3 className="text-lg font-bold mb-2">Cyberpunk Dreams</h3>
-          <p className="text-gray-600 mb-2">by PixelArtist</p>
-          <p className="text-sm text-gray-500 mb-4">A neon-lit adventure</p>
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-500">987 votes</span>
-            <button className="bg-red-600 text-white px-4 py-2 rounded font-bold hover:bg-red-700">
-              Vote
+        
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>Cyberpunk Dreams</h4>
+          <p>A neon-lit adventure through a dystopian future.</p>
+          <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+            <span style={{fontSize: '12px', color: '#666'}}>987 votes</span>
+            <button style={{
+              background: 'var(--accent)',
+              color: 'white',
+              border: '2px solid var(--ink)',
+              padding: '4px 8px',
+              fontSize: '12px',
+              fontWeight: '800',
+              cursor: 'pointer'
+            }}>
+              VOTE
             </button>
           </div>
         </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-lg">
-          <div className="bg-gray-200 h-48 rounded-lg mb-4 flex items-center justify-center">
-            <span className="text-gray-500">Manga Cover</span>
+        
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>School Days</h4>
+          <p>Heartwarming stories from high school life.</p>
+          <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+            <span style={{fontSize: '12px', color: '#666'}}>756 votes</span>
+            <button style={{
+              background: 'var(--accent)',
+              color: 'white',
+              border: '2px solid var(--ink)',
+              padding: '4px 8px',
+              fontSize: '12px',
+              fontWeight: '800',
+              cursor: 'pointer'
+            }}>
+              VOTE
+            </button>
           </div>
-          <h3 className="text-lg font-bold mb-2">School Days</h3>
-          <p className="text-gray-600 mb-2">by SliceOfLife</p>
-          <p className="text-sm text-gray-500 mb-4">Heartwarming high school stories</p>
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-500">756 votes</span>
-            <button className="bg-red-600 text-white px-4 py-2 rounded font-bold hover:bg-red-700">
-              Vote
+        </div>
+        
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>Dragon Quest</h4>
+          <p>Epic fantasy adventure with magical creatures.</p>
+          <div style={{marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+            <span style={{fontSize: '12px', color: '#666'}}>543 votes</span>
+            <button style={{
+              background: 'var(--accent)',
+              color: 'white',
+              border: '2px solid var(--ink)',
+              padding: '4px 8px',
+              fontSize: '12px',
+              fontWeight: '800',
+              cursor: 'pointer'
+            }}>
+              VOTE
             </button>
           </div>
         </div>
       </div>
-    </div>
+
+      <h2 className="h2"><span>VOTING RULES</span><small>GUIDELINES</small></h2>
+      <div className="cols">
+        <div className="panel">
+          <div className="caption">HOW TO VOTE</div>
+          <ul style={{margin: 0, paddingLeft: '1.2rem', fontSize: '14px'}}>
+            <li>Stake $MANGEN tokens to earn voting power</li>
+            <li>Each token gives you 1 vote per submission</li>
+            <li>You can vote multiple times on the same story</li>
+            <li>Voting period lasts 7 days per season</li>
+            <li>Top 3 stories receive funding</li>
+          </ul>
+        </div>
+        <div className="panel">
+          <div className="caption">VOTING POWER</div>
+          <ul style={{margin: 0, paddingLeft: '1.2rem', fontSize: '14px'}}>
+            <li>1 $MANGEN = 1 vote</li>
+            <li>10 $MANGEN = 10 votes</li>
+            <li>100 $MANGEN = 100 votes</li>
+            <li>Stake more, vote more</li>
+            <li>Unstake anytime after voting</li>
+          </ul>
+        </div>
+      </div>
+    </>
   );
 }

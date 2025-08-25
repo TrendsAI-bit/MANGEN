@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Manga Generations",
-  description: "Create and vote on manga stories",
+  title: "Manga Generations — Vintage Manga Layout",
+  description: "Fuel the Manga Generation.",
 };
 
 export default function RootLayout({
@@ -14,23 +15,39 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 min-h-screen">
-        <header className="bg-black text-white p-4">
-          <div className="max-w-6xl mx-auto">
-            <h1 className="text-3xl font-bold text-center">マンガジェネレーション</h1>
-            <nav className="mt-4 flex justify-center space-x-8">
-              <Link href="/" className="hover:text-blue-400">HOME</Link>
-              <Link href="/create" className="hover:text-blue-400">CREATE</Link>
-              <Link href="/vote" className="hover:text-blue-400">VOTE</Link>
-              <Link href="/winners" className="hover:text-blue-400">WINNERS</Link>
-              <Link href="/profile" className="hover:text-blue-400">PROFILE</Link>
-            </nav>
+      <body>
+        <main className="page">
+          {/* Masthead with Logo */}
+          <div className="masthead">
+            <div className="logo-container">
+              <Image 
+                src="/mangenlogo.png" 
+                alt="MANGEN Logo" 
+                width={80} 
+                height={60} 
+                className="logo"
+              />
+            </div>
+            マンゲン
           </div>
-        </header>
-        <main>{children}</main>
-        <footer className="bg-black text-white p-4 text-center">
-          © 2024 Manga Generations
-        </footer>
+
+          {/* Navigation Tabs */}
+          <nav className="tabs">
+            <Link href="/" className="tab">ABOUT</Link>
+            <Link href="/create" className="tab">CREATE</Link>
+            <Link href="/vote" className="tab">VOTE</Link>
+            <Link href="/winners" className="tab">WINNERS</Link>
+            <Link href="/profile" className="tab">PROFILE</Link>
+          </nav>
+
+          {children}
+
+          {/* Footer */}
+          <div className="footer">
+            <span>© 2024 Manga Generations</span>
+            <span>$MANGEN — Fuel the Manga Generation</span>
+          </div>
+        </main>
       </body>
     </html>
   );

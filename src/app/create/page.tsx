@@ -13,41 +13,97 @@ export default function CreatePage() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-8">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Generate <span className="text-red-600">Manga</span> Art</h1>
-        <p className="text-xl text-gray-600">Create stunning manga artwork using AI</p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-12">
-        <div className="space-y-6">
-          <div>
-            <label className="block text-sm font-bold mb-2">Prompt</label>
+    <>
+      <h2 className="h2"><span>CREATE</span><small>GENERATOR</small></h2>
+      
+      <div className="hero">
+        <div className="panel">
+          <div className="caption">AI GENERATOR</div>
+          <p className="copy">
+            Create stunning manga artwork using AI. Describe your vision and watch it come to life! 
+            Our AI understands manga aesthetics and can generate panels, covers, and illustrations.
+          </p>
+          <div style={{marginTop: '12px'}}>
+            <label style={{display: 'block', fontWeight: '800', marginBottom: '8px'}}>PROMPT</label>
             <textarea
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
-              className="w-full h-32 p-4 border rounded-lg resize-none"
+              style={{
+                width: '100%',
+                height: '120px',
+                padding: '12px',
+                border: '3px solid var(--ink)',
+                background: '#f0ebde',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '14px',
+                resize: 'none'
+              }}
               placeholder="Describe the manga art you want to create..."
             />
           </div>
           <button
             onClick={generate}
             disabled={loading}
-            className="w-full bg-red-600 text-white py-4 font-bold rounded hover:bg-red-700 disabled:opacity-50"
+            style={{
+              width: '100%',
+              marginTop: '12px',
+              padding: '12px',
+              background: 'var(--accent)',
+              color: 'white',
+              border: '3px solid var(--ink)',
+              fontFamily: 'Inter, sans-serif',
+              fontWeight: '800',
+              fontSize: '16px',
+              cursor: 'pointer'
+            }}
           >
-            {loading ? "Generating..." : "Generate Manga Art"}
+            {loading ? "GENERATING..." : "GENERATE MANGA ART"}
           </button>
         </div>
-
-        <div className="bg-white p-8 rounded-lg shadow-lg">
-          <h3 className="text-xl font-bold mb-4">Generated Art</h3>
-          <div className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
-            <span className="text-gray-500">
-              {loading ? "Generating your manga art..." : "Your generated art will appear here"}
-            </span>
+        
+        <div className="panel">
+          <div className="caption">PREVIEW</div>
+          <div className="img-placeholder" style={{height: '300px'}}>
+            {loading && (
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: '100%',
+                color: '#666',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '14px'
+              }}>
+                Generating your manga art...
+              </div>
+            )}
           </div>
         </div>
       </div>
-    </div>
+
+      <h2 className="h2"><span>PRESET PROMPTS</span><small>TEMPLATES</small></h2>
+      <div className="strip">
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>Splash</h4>
+          <p>Professional splash screen with bold logo and dramatic energy.</p>
+        </div>
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>Dashboard</h4>
+          <p>Clean manga-themed dashboard with panels and speedlines.</p>
+        </div>
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>Creator</h4>
+          <p>Futuristic manga creation tool interface.</p>
+        </div>
+        <div className="cell">
+          <div className="thumb" aria-hidden="true"></div>
+          <h4>Vote</h4>
+          <p>Manga-inspired voting page with story previews.</p>
+        </div>
+      </div>
+    </>
   );
 }
